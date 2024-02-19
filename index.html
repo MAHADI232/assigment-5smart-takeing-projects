@@ -53,7 +53,7 @@
                 </div>
                 <div class="navbar-end gap-2">
                     <a href=""><i class=" text-xl serarch fa-solid fa-magnifying-glass"></i></a>
-                   <button><a class="btn capitalize text-green-500 bg-green-200 "><img src="images/bus-icon.png">BUS</a></button>
+                   <button ><a href="button-section" class="btn capitalize text-green-500 bg-green-200 "><img src="images/bus-icon.png">BUS</a></button>
                 </div>
               </div>
         </nav>
@@ -161,8 +161,10 @@
 
                       </div>
                      <button class=" btn flex items-center justify-center px-2 gap-2 bg-green-300" >
+                      <a href="">
                         <img src="images/seat-green.png" alt="">
-                    <h3 class="">40 Seats left</h3>
+                        <h3 id="" class=""><span id="uping count">40</span> Seats left</h3>
+                      </a>
                     </button>
                 </div>
 
@@ -199,7 +201,7 @@
     </setion>
 
      <!-- main section -3 -->
-    <section class="my-24 main-section-seat ">
+    <section class="my-24 main-section-seat " id="button-section">
        
         <div class="select-container-div flex  justify-around ">
             <div>
@@ -219,9 +221,9 @@
                         <button class="btn flex items-center justify-end"><img src="images/seat-green-filled.png" alt=""></button>
                       </div>
                    </div><!-- select your div -->
-                   <div class="  flex-btn grid grid-cols-5 gap-x-8 gap-y-4  button-div ">
+                   <div id="button-number" class="  flex-btn grid grid-cols-5 gap-x-8 gap-y-4  button-div ">
                     <button>A</button>
-                     <button class="button px-8 p-2 bg-slate-300 ">A1</button>
+                     <button class="button px-8 p-2  bg-slate-300 ">A1</button>
                      <button class="button p-x-8 P-2 bg-slate-300">A2</button>
                      <button class="button p-x-8 P-2 bg-slate-300">A3</button>
                      <button class="button p-x-8 P-2 bg-slate-300">A4</button>
@@ -271,17 +273,17 @@
             <div class="">
                 <h2 class="text-2xl capitalize border-b-2">select your seat</h2>
                 <div class="ceat-flex ">
-                    <div class="grid grid-cols-3 mt-4 p-4  bg-slate-200 gap-x-20">
+                    <div id="selector-container" class="grid grid-cols-3 mt-4 p-4  bg-slate-200 gap-x-20">
                         <div class="flex    file:justify-center items-center">
-                            <h2 class="">Seat</h2>
+                            <h2 class="" id= "seat-count1" > Seat </h2>
                             <img class="h-6" src="images/fare.png" alt="">
                         </div>
                         <h2 class=""> Class</h2>
                         <h2 class=""> Price</h2>
-                         <p class="">C2</p>
+                         <p id="select-btn" class="">C2</p>
                          <P class="">Economoy</P>
                          <P class=""> 550</P>
-                         <p class="">C2</p>
+                         <p id="selection-btn2" class="">C2</p>
                          <P class="">Economoy</P>
                          <P class=" ppp"> 550</P>
                     </div>
@@ -358,6 +360,8 @@
      </div>
        
     </footer>
+    <script src="js/costom.js"></script>
+    <script src="js/utility.js"></script>
     
 </body>
-</html> 
+</html>
